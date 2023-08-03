@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    padding: 30px;
+    top: 0;
+    text-align: center; 
+    background-color: tomato;
+     border-radius-bottom: 0 0 40px 40px;
+}
+.title{
+color: whitesmoke;
+ font-family:arial ;
+font-size: 6em;
+flex-wrap: wrap;
+}
+.mantra{
+    font-size: 2em;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: fira-sans,sans-serif;
+    font-size: 1.8em;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.nav-bar li{
+    padding: 10px;
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+}
+a:hover{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+a:active{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.products,.services {
+    display:inline-block;
+    position: relative;
+}
+.products-list,.services-commercial-list,.services-domestic-list{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.products-list a,.services-commercial-list a,.services-domestic-list a{
+ color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+.products-list a:hover,.services-commercial-list a:hover,.services-domestic-list a:hover{
+background-color:#A45A52;
+color: whitesmoke;
+}
+.products:hover .products-list{
+display: block;
+float: left;
+
+}
+.services-domestic:hover .services-domestic-list{
+    display: block;
+    float: left;
+
+}
+.services-commercial:hover .services-commercial-list{
+    display: block;
+    float: left;
+}
+a{
+list-style: none;
+text-decoration: none;
+} 
+.services{
+    display: flex;
+    flex-direction: column;
+}
+.services-commercial,.services-domestic{
+     display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.services:hover .services-commercial{
+display: flex;
+flex-direction: column;
+}
+.services:hover .services-domestic{
+    display: flex;
+    flex-direction: column;
+
+}
+.home a:hover,.services a:hover,.products a:hover,.news a:hover,.about a:hover{
+    padding: 10px;
+   color: whitesmoke;
+    text-decoration: none;
+}
+.nav-bar a:visited{
+    color: black;
+}
+
+.home:hover,.services:hover,.products:hover,.news:hover,.about:hover{
+    background-color: #A45A52;
+    
+}
+.service-post{
+    background: url(pics/machine.webp);
+}
